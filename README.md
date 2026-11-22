@@ -28,8 +28,9 @@ From the moment the second route has compiled, the dev server prints this on eve
 ```
 
 The key length is the length of the full path of
-`.next/dev/static/chunks/_1anvha4rlo79g._.js`, the chunk list of the client entry. That
-path is the same for both routes, but its content is not:
+`.next/dev/static/chunks/_1anvha4rlo79g._.js`, the chunk list of the client entry, so the
+number depends on where the repository is checked out. That path is the same for both
+routes, but its content is not:
 
 - The async loader of `app/lazy.ts` is emitted once per route under a different name,
   `static/chunks/[root-of-the-server]__<hash>._.js`. The two files are byte-identical.
